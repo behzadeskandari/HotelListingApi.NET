@@ -47,12 +47,15 @@ namespace HotelListingApi
             services.AddMemoryCache();
 
             services.ConfigureRateLimiting();
+            
             services.AddHttpContextAccessor();
 
             services.ConfigureHttpCacheHeaders();
 
             services.AddAuthentication();
+            
             services.ConfigureIdentity();
+
             services.ConfigureJWT(Configuration);
 
             //services.AddControllers();

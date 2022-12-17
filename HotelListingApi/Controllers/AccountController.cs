@@ -63,7 +63,7 @@ namespace HotelListingApi.Controllers
                 return Accepted();
             }
             catch (Exception ex)
-            {
+            { 
                 _logger.LogError(ex, $"Something Went Wrong in the {nameof(Register)}");
                 return Problem($"Something Went Wrong in the {nameof(Register)}", statusCode: 500);
             }

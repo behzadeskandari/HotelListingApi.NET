@@ -12,7 +12,9 @@ namespace HotelListing.Data
     public class DatabaseContext : IdentityDbContext<ApiUser>
     {
         public DatabaseContext(DbContextOptions options) : base(options)
-        { }
+        { 
+        
+        }
 
 
 
